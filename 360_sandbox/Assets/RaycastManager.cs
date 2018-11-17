@@ -44,8 +44,10 @@ public class RaycastManager : MonoBehaviour
         {
             Debug.Log("hit nothing");
             Debug.DrawRay(transform.position, fwd*raycastDistance, Color.red);
-
-            lastObjectHit.GetComponent<SphereManager>().Reset();
+            if(lastObjectHit != null){
+                lastObjectHit.GetComponent<SphereManager>().Reset();
+            }
+            
         }
     }
 
