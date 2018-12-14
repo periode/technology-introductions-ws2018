@@ -12,11 +12,11 @@
 
 1. Downloading and installing Unity with the Android Build Support **is not enough**. You need to install Android-specific software too.
 
-2. Start by downloading [the latest JDK](www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html) (JDK 8 at the beginning of the semester). Install it **and remember where you install it**.
+2. Start by downloading [the latest JDK](http://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html) (JDK 8 at the beginning of the semester). Install it **and remember where you install it**.
 
 3. Then, download [Android Studio](https://developer.android.com/studio/index.html). Android Studio is the easiest way to install the Android SDK. Go through all of the installation steps with the default settings.
 
-4. Once you've installed the Android SDK, open it and go to **Preferences > Appearance > System Settings > Android SDK**. At the top of the list, click the **SDK Tools** tab. Tick the checkboxes for **Build-Tools, Platform-Tools** and **SDK Tools**.
+4. Once you've installed the Android SDK, open it and go to **Preferences (or Settings) > Appearance > System Settings > Android SDK**. At the top of the list, click the **SDK Tools** tab. Tick the checkboxes for **Build-Tools, Platform-Tools** and **SDK Tools**.
 
 ![Installing Components](https://github.com/pierredepaz/alternate-realities/blob/master/assets/img/android_sdk.png)
 
