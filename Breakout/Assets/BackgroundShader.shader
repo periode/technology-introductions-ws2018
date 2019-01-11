@@ -67,7 +67,7 @@
                 col.g += sin(_Time*2.0)*i.uv.y;
                 col.b += i.uv.x + i.uv.y;
 
-                if(distance(float4(i.uv.x, i.uv.y, 0., 0.), float4(0.5, 0.5, 0., 0.)) > 0.24){
+                if(distance(float4(i.uv.x, i.uv.y, 0., 0.), float4(0.5, 0.5, 0., 0.)) > 0.25){
                     col.r = col.g = col.b = 0.;
                 }
 
