@@ -66,7 +66,7 @@ public class BallManager : MonoBehaviour {
             float randomNumber = Random.Range(-2f, 2f);
 
             //add the force
-            GetComponent<Rigidbody>().AddForce(new Vector3(randomNumber, 2f, 0f), ForceMode.Impulse);
+            GetComponent<Rigidbody>().AddForce(new Vector3(randomNumber, 1f, 0f), ForceMode.Impulse);
         }
     }
 }

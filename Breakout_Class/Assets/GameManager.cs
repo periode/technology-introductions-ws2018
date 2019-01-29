@@ -13,19 +13,21 @@ public class GameManager : MonoBehaviour {
 
     public GameObject brickPrefab;
     int number_of_columns = 8;
-    int number_of_rows = 5;
+    int number_of_rows = 3;
 
     public int totalLives = 1;
+
+    public int score = 0;
 
 
 
 	// Use this for initialization
 	void Start () {
-        for (int x = -5; x < number_of_columns; x++ ){ //this goes on the x axis and place a brick at each column
+        for (int x = 0; x < number_of_columns; x++ ){ //this goes on the x axis and place a brick at each column
 
             for (int y = 0; y < number_of_rows; y++){ //this goes on the y axis and place a brick at each row
                 
-                GameObject.Instantiate(brickPrefab, new Vector3(x*1.5f, y*1.5f, 0f), Quaternion.identity);
+                GameObject.Instantiate(brickPrefab, new Vector3(-6.5f+x*2f, 2+y*1.5f, 0f), Quaternion.identity);
 
             }
 

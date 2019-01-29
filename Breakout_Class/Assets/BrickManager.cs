@@ -7,7 +7,7 @@ public class BrickManager : MonoBehaviour {
 	// Use this for initialization
 	void Start () {
 
-        InvokeRepeating("PlayAnimation", Random.Range(1.0f, 4.0f), Random.Range(5.0f, 8.0f));
+        //InvokeRepeating("PlayAnimation", Random.Range(1.0f, 4.0f), Random.Range(5.0f, 8.0f));
 		
 	}
 
@@ -29,7 +29,7 @@ public class BrickManager : MonoBehaviour {
         if(col.gameObject.name == "Ball"){
 
             GetComponent<ParticleSystem>().Play();
-
+            GameObject.Find("GameManager").GetComponent<GameManager>().score++;
             //destroy us
             //Destroy(this.gameObject);
             GetComponent<Renderer>().enabled = false;
